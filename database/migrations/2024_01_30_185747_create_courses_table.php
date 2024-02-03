@@ -12,6 +12,7 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
+            $table->text('category')->nullable();
             $table->decimal('price', 10, 2);
             $table->foreignId('instructor_id')->constrained('users');
             $table->timestamps();
