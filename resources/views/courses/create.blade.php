@@ -8,6 +8,7 @@
 <h1>Create course</h1>
 <form action="{{ route('courses.store') }}" method="post">
 	@csrf
+	 <input type="hidden" id="instructor_id" name="instructor_id" value="{{ $instructorId}}" />
 
 	<input type="text" name="title" value="PHP for begginers">
 	<br>
